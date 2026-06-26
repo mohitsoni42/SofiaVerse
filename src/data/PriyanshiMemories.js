@@ -6,7 +6,7 @@ export const photoStories = [
     title: 'The smile that changes the whole room',
     initials: 'S',
     accent: 'rose',
-    image: '/SofiaVerse/photos/4.jpg',
+    image: '/SofiaVerse/photos/10.jpg',
     alt: 'A favorite photo of Priyanshi smiling',
     caption: 'Smile of a pure heart',
     paragraph:
