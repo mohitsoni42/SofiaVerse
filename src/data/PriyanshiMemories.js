@@ -91,7 +91,7 @@ export const giftSurprises = [
 export const PriyanshiLetter = [
   'Priyanshi, this little universe is built around the feeling people get when they are lucky enough to know you.',
   'It exists because of your warmth, your sparkle, your humor, your kindness, and the quiet way you make ordinary moments feel important.',
-  "You have a way of making people feel heard, valued, and understood — and that's a kind of magic that can't really be explained, only experienced.",
+  "You have a way of making people feel heard, valued, and understood — and that's a kind of magic(like your eyes) that can't really be explained, only experienced.",
   "Your intelligence inspires, your humility grounds, your empathy comforts, and your presence has a way of turning memories into something worth holding onto.",
   "Whether it's through conversations, laughter, journeys, music, or simply sharing a moment of silence, you've left pieces of yourself in the hearts of the people around you.",
   "May this birthday remind you that you are deeply loved, genuinely admired, beautifully seen, and worth celebrating everyday.",
