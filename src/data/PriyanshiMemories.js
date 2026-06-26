@@ -18,7 +18,7 @@ export const photoStories = [
     title: 'The presence that brings peace and joy',
     initials: 'SV',
     accent: 'gold',
-    image: '/photos/6.jpg',
+    image: '/SofiaVerse/photos/6.jpg',
     alt: 'A birthday memory with Priyanshi',
     caption: 'Happiness we root for',
     paragraph:
@@ -30,7 +30,7 @@ export const photoStories = [
     title: 'Friendship with its own constellation',
     initials: '★',
     accent: 'blue',
-    image: '/photos/2.jpg',
+    image: '/SofiaVerse/photos/2.jpg',
     alt: 'A friendship moment with Priyanshi',
     caption: 'Friendship Constellation',
     paragraph:
@@ -41,25 +41,25 @@ export const photoStories = [
 export const slideshowMoments = [
   {
     title: 'Beautiful little you',
-    image: '/photos/3.jpg',
+    image: '/SofiaVerse/photos/3.jpg',
     initials: '01',
     description: 'The unplanned moments, the loud laughter, the photographs everyone keeps.',
   },
   {
     title: 'Soft magic',
-    image: '/photos/9.jpg',
+    image: '/SofiaVerse/photos/9.jpg',
     initials: '02',
     description: 'The calm conversations and quiet kindness that make ordinary days feel special.',
   },
   {
     title: 'Birthday glow',
-    image: '/photos/8.jpg',
+    image: '/SofiaVerse/photos/8.jpg',
     initials: '03',
     description: 'The part of the night where everything turns gold because you are being celebrated.',
   },
   {
     title: 'Next chapter',
-    image: '/photos/7.jpg',
+    image: '/SofiaVerse/photos/7.jpg',
     initials: '04',
     description: 'New memories waiting patiently for their turn to become favorite stories.',
   },
