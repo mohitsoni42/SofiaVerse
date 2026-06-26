@@ -1,0 +1,259 @@
+@keyframes auroraDrift {
+  from {
+    transform: translate3d(-2%, -1%, 0) scale(1);
+  }
+
+  to {
+    transform: translate3d(2%, 3%, 0) scale(1.06);
+  }
+}
+
+@keyframes moonFloat {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) rotate(-4deg);
+  }
+
+  50% {
+    transform: translate3d(0, -14px, 0) rotate(2deg);
+  }
+}
+
+@keyframes balloonFloat {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) rotate(var(--rotate));
+  }
+
+  50% {
+    transform: translate3d(var(--drift), -24px, 0) rotate(calc(var(--rotate) * -1));
+  }
+}
+
+@keyframes fireflyDance {
+  0% {
+    transform: translate3d(0, 0, 0) scale(0.78);
+    opacity: 0.25;
+  }
+
+  35% {
+    opacity: 1;
+  }
+
+  70% {
+    transform: translate3d(var(--travel-x), var(--travel-y), 0) scale(1);
+    opacity: 0.62;
+  }
+
+  100% {
+    transform: translate3d(0, 0, 0) scale(0.78);
+    opacity: 0.25;
+  }
+}
+
+@keyframes sparklePulse {
+  0%,
+  100% {
+    opacity: 0.16;
+    transform: scale(0.6) rotate(0deg);
+  }
+
+  48% {
+    opacity: 1;
+    transform: scale(1) rotate(45deg);
+  }
+}
+
+@keyframes horizonGlow {
+  0%,
+  100% {
+    opacity: 0.42;
+    transform: translateY(8px) scaleX(0.94);
+  }
+
+  50% {
+    opacity: 0.88;
+    transform: translateY(0) scaleX(1);
+  }
+}
+
+@keyframes orbitRotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pageShimmer {
+  0%,
+  100% {
+    opacity: 0.24;
+    transform: translateX(-18%);
+  }
+
+  50% {
+    opacity: 0.62;
+    transform: translateX(18%);
+  }
+}
+
+@keyframes photoLift {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 26px, 0) scale(0.98);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+
+@keyframes keepsakeBreath {
+  0%,
+  100% {
+    transform: scale(1);
+    filter: saturate(1);
+  }
+
+  50% {
+    transform: scale(1.025);
+    filter: saturate(1.16);
+  }
+}
+
+@keyframes cardFanOne {
+  0%,
+  100% {
+    transform: translate3d(-12%, 4%, 0) rotate(-12deg);
+  }
+
+  50% {
+    transform: translate3d(-14%, -2%, 0) rotate(-8deg);
+  }
+}
+
+@keyframes cardFanTwo {
+  0%,
+  100% {
+    transform: translate3d(3%, -1%, 0) rotate(4deg);
+  }
+
+  50% {
+    transform: translate3d(1%, -7%, 0) rotate(1deg);
+  }
+}
+
+@keyframes cardFanThree {
+  0%,
+  100% {
+    transform: translate3d(17%, 8%, 0) rotate(14deg);
+  }
+
+  50% {
+    transform: translate3d(19%, 2%, 0) rotate(10deg);
+  }
+}
+
+@keyframes cometFly {
+  0% {
+    opacity: 0;
+    transform: translate3d(34vw, -28vh, 0) rotate(-32deg);
+  }
+
+  10%,
+  34% {
+    opacity: 1;
+  }
+
+  46%,
+  100% {
+    opacity: 0;
+    transform: translate3d(-42vw, 46vh, 0) rotate(-32deg);
+  }
+}
+
+@keyframes starPulse {
+  0%,
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    box-shadow:
+      0 0 18px rgba(255, 217, 129, 0.5),
+      0 0 42px rgba(255, 217, 129, 0.18);
+  }
+
+  50% {
+    transform: translate(-50%, -50%) scale(1.12);
+    box-shadow:
+      0 0 24px rgba(255, 217, 129, 0.74),
+      0 0 70px rgba(255, 127, 182, 0.25);
+  }
+}
+
+@keyframes giftBob {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) rotate(-1deg);
+  }
+
+  50% {
+    transform: translate3d(0, -10px, 0) rotate(1deg);
+  }
+}
+
+@keyframes ribbonPulse {
+  0%,
+  100% {
+    transform: scale(1);
+    box-shadow: var(--shadow-gold);
+  }
+
+  50% {
+    transform: scale(1.06);
+    box-shadow:
+      0 0 26px rgba(255, 217, 129, 0.72),
+      0 0 74px rgba(255, 127, 182, 0.28);
+  }
+}
+
+@keyframes giftGlowBurst {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.3);
+  }
+
+  38% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1.18);
+  }
+}
+
+@keyframes confettiBurst {
+  0% {
+    opacity: 0;
+    transform: rotate(var(--angle)) translate3d(0, 0, 0) scale(0.5);
+  }
+
+  18% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: rotate(var(--angle)) translate3d(var(--distance), 0, 0) scale(1) rotate(140deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 1ms !important;
+  }
+}

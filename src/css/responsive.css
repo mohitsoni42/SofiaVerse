@@ -1,0 +1,280 @@
+@media (max-width: 860px) {
+  :root {
+    --header-height: 68px;
+    --content-width: min(100%, calc(100vw - 32px));
+  }
+
+  .site-header {
+    width: calc(100vw - 24px);
+  }
+
+  .brand span:last-child {
+    display: none;
+  }
+
+  .scene-nav {
+    gap: 2px;
+    max-width: calc(100vw - 74px);
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .scene-nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .scene-nav__item {
+    min-width: auto;
+    padding-inline: 10px;
+  }
+
+  .scene {
+    min-height: 100svh;
+    padding-inline: 16px;
+  }
+
+  h1 {
+    font-size: clamp(3.35rem, 17vw, 6rem);
+  }
+
+  h2 {
+    font-size: clamp(2.3rem, 12vw, 4.2rem);
+  }
+
+  .intro-scene__moon-wrap {
+    top: 13vh;
+    right: 18px;
+    opacity: 0.82;
+  }
+
+  .balloon--gold {
+    left: 8%;
+    top: 18%;
+  }
+
+  .balloon--rose,
+  .balloon--pearl {
+    left: 5%;
+  }
+
+  .balloon--blue {
+    right: 6%;
+    bottom: 18%;
+  }
+
+  .split-scene,
+  .storybook-layout,
+  .photo-story,
+  .photo-story--reverse,
+  .gallery-scene__content,
+  .wishes-scene__content {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .gallery-scene {
+    align-items: center;
+    padding-block-start: var(--header-height);
+  }
+
+  .gallery-scene__intro {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .gallery-scene__intro p {
+    margin-inline: auto;
+  }
+
+  .photo-story {
+    min-height: auto;
+  }
+
+  .photo-story--reverse .photo-story__frame {
+    order: 0;
+  }
+
+  .photo-story__copy {
+    padding: 20px 0 0 18px;
+  }
+
+  .photo-story__copy h3,
+  .slide__copy h3 {
+    font-size: clamp(2rem, 10vw, 3.35rem);
+  }
+
+  .split-scene__copy,
+  .storybook-layout__copy {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .split-scene__copy p,
+  .storybook-layout__copy p {
+    margin-inline: auto;
+  }
+
+  .memory-orbit {
+    min-height: 430px;
+  }
+
+  .memory-orbit::before,
+  .memory-orbit__ring {
+    width: min(78vw, 330px);
+  }
+
+  .memory-card {
+    width: min(240px, 58vw);
+    min-height: 116px;
+    padding: 16px;
+  }
+
+  .memory-card--top {
+    top: 0;
+  }
+
+  .memory-card--left {
+    left: 0;
+    bottom: 6%;
+  }
+
+  .memory-card--right {
+    right: 0;
+    bottom: 13%;
+  }
+
+  .storybook {
+    min-height: 470px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 8px 1fr;
+  }
+
+  .storybook__page--left {
+    border-radius: 8px 8px 0 0;
+  }
+
+  .storybook__page--right {
+    border-radius: 0 0 8px 8px;
+  }
+
+  .slideshow-scene__header {
+    align-items: start;
+    flex-direction: column;
+  }
+
+  .slide {
+    grid-template-columns: 1fr;
+  }
+
+  .slide__image,
+  .slide__keepsake {
+    min-height: 240px;
+  }
+
+  .slide__copy {
+    padding: 22px;
+  }
+
+  .slideshow-stage {
+    min-height: 620px;
+  }
+
+  .gallery-preview {
+    min-height: 360px;
+  }
+
+  .gallery-preview__card {
+    left: 24%;
+    width: min(62vw, 260px);
+  }
+
+  .wishes-scene__copy {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .wishes-scene__copy p {
+    margin-inline: auto;
+  }
+
+  .gift-stage {
+    min-height: 470px;
+  }
+
+  .gift-box {
+    width: min(56vw, 220px);
+    bottom: 42px;
+  }
+
+  .gift-card {
+    top: 24px;
+    width: min(90%, 460px);
+    min-height: 190px;
+  }
+}
+
+@media (max-width: 520px) {
+  .scene-nav__item span {
+    font-size: 0.72rem;
+  }
+
+  .intro-scene__content {
+    padding-top: 9vh;
+  }
+
+  .intro-scene__subtitle {
+    max-width: 21rem;
+  }
+
+  .gold-button,
+  .quiet-button {
+    width: min(100%, 310px);
+  }
+
+  .memory-card strong {
+    font-size: 1.08rem;
+  }
+
+  .memory-card span {
+    font-size: 0.84rem;
+  }
+
+  .storybook__page {
+    padding: 20px;
+  }
+
+  .gallery-scene {
+    padding-block-end: 34px;
+  }
+
+  .photo-story__frame {
+    padding: 10px;
+  }
+
+  .photo-story {
+    padding: 10px;
+  }
+
+  .slideshow-stage {
+    min-height: 560px;
+  }
+
+  .letter-card::before {
+    width: 46px;
+    top: 20px;
+    right: 20px;
+  }
+
+  .gift-stage {
+    min-height: 520px;
+  }
+
+  .gift-box {
+    width: min(68vw, 210px);
+  }
+
+  .gift-next {
+    width: min(86%, 280px);
+    bottom: 18px;
+  }
+}

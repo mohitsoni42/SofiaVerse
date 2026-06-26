@@ -1,0 +1,83 @@
+.journey-scene::before {
+  position: absolute;
+  inset: 8vh 0 auto 0;
+  height: 78vh;
+  z-index: 0;
+  content: "";
+  background:
+    radial-gradient(circle at 70% 44%, rgba(255, 127, 182, 0.18), transparent 26rem),
+    radial-gradient(circle at 42% 58%, rgba(138, 215, 255, 0.14), transparent 30rem);
+}
+
+.memory-orbit {
+  position: relative;
+  min-height: min(64vh, 620px);
+  display: grid;
+  place-items: center;
+}
+
+.memory-orbit::before {
+  position: absolute;
+  width: min(52vw, 420px);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  content: "";
+  background:
+    radial-gradient(circle, rgba(255, 217, 129, 0.22), transparent 62%),
+    conic-gradient(from 20deg, transparent, rgba(255, 217, 129, 0.42), transparent, rgba(138, 215, 255, 0.32), transparent);
+  filter: blur(4px);
+  animation: orbitRotate 28s linear infinite;
+}
+
+.memory-orbit__ring {
+  position: absolute;
+  width: min(48vw, 390px);
+  aspect-ratio: 1;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  box-shadow:
+    inset 0 0 28px rgba(255, 255, 255, 0.08),
+    0 0 52px rgba(106, 117, 255, 0.18);
+}
+
+.memory-card {
+  position: absolute;
+  width: min(250px, 42vw);
+  min-height: 132px;
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: var(--radius-sm);
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.14), rgba(255, 255, 255, 0.06));
+  box-shadow: var(--shadow-soft);
+  backdrop-filter: blur(20px);
+}
+
+.memory-card strong {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--color-ink);
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+}
+
+.memory-card span {
+  color: var(--color-ink-muted);
+  font-size: 0.94rem;
+  line-height: 1.5;
+}
+
+.memory-card--top {
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.memory-card--left {
+  left: 0;
+  bottom: 12%;
+}
+
+.memory-card--right {
+  right: 0;
+  bottom: 18%;
+}

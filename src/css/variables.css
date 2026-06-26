@@ -1,0 +1,29 @@
+:root {
+  --color-ink: #f8f0da;
+  --color-ink-muted: rgba(248, 240, 218, 0.74);
+  --color-ink-soft: rgba(248, 240, 218, 0.56);
+  --color-night-900: #070716;
+  --color-night-800: #11112a;
+  --color-night-700: #182042;
+  --color-indigo: #6a75ff;
+  --color-rose: #ff7fb6;
+  --color-coral: #ff9f8b;
+  --color-gold: #ffd981;
+  --color-gold-deep: #c5922d;
+  --color-blue: #8ad7ff;
+  --color-mint: #9ff4d5;
+  --color-glass: rgba(255, 255, 255, 0.1);
+  --color-glass-strong: rgba(255, 255, 255, 0.18);
+  --color-line: rgba(255, 255, 255, 0.18);
+  --shadow-soft: 0 24px 80px rgba(0, 0, 0, 0.42);
+  --shadow-gold: 0 0 22px rgba(255, 217, 129, 0.52), 0 0 64px rgba(255, 183, 74, 0.24);
+  --font-sans:
+    Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-display:
+    "SF Pro Display", "Avenir Next", Inter, ui-sans-serif, system-ui, sans-serif;
+  --header-height: 76px;
+  --content-width: min(1120px, calc(100vw - 40px));
+  --radius-sm: 8px;
+  --radius-md: 18px;
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+}

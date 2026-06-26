@@ -1,0 +1,329 @@
+.intro-scene {
+  text-align: center;
+}
+
+.intro-scene::before {
+  position: absolute;
+  inset: auto -10vw 0;
+  height: 44vh;
+  z-index: 0;
+  content: "";
+  background:
+    radial-gradient(ellipse at 50% 100%, rgba(255, 217, 129, 0.22), transparent 52%),
+    linear-gradient(to top, rgba(12, 11, 30, 0.98), transparent);
+}
+
+.intro-scene__content {
+  display: grid;
+  justify-items: center;
+  padding-top: 4vh;
+}
+
+.intro-scene h1 {
+  text-shadow:
+    0 6px 28px rgba(255, 217, 129, 0.14),
+    0 18px 80px rgba(0, 0, 0, 0.64);
+}
+
+.intro-scene__subtitle {
+  margin: 0 auto;
+  font-size: clamp(1.06rem, 2vw, 1.42rem);
+}
+
+.intro-scene__moon-wrap {
+  position: absolute;
+  top: 12vh;
+  right: clamp(22px, 10vw, 150px);
+  z-index: 1;
+  width: clamp(104px, 15vw, 178px);
+  aspect-ratio: 1;
+  animation: moonFloat 7s ease-in-out infinite;
+}
+
+.moon {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at 34% 28%, rgba(255, 255, 255, 0.96), transparent 12%),
+    radial-gradient(circle at 62% 72%, rgba(196, 164, 93, 0.28), transparent 13%),
+    radial-gradient(circle at 50% 50%, #fff5c7, #e6c46a 62%, #b47b34);
+  box-shadow:
+    0 0 38px rgba(255, 241, 185, 0.76),
+    0 0 120px rgba(255, 217, 129, 0.3);
+}
+
+.moon::after {
+  position: absolute;
+  inset: 9%;
+  border-radius: 50%;
+  content: "";
+  background: linear-gradient(135deg, transparent 44%, rgba(126, 78, 22, 0.16));
+}
+
+.moon__crater {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(155, 111, 42, 0.2);
+  box-shadow: inset 5px 5px 12px rgba(103, 67, 25, 0.18);
+}
+
+.moon__crater--one {
+  top: 27%;
+  left: 26%;
+  width: 13%;
+  aspect-ratio: 1;
+}
+
+.moon__crater--two {
+  top: 52%;
+  left: 60%;
+  width: 18%;
+  aspect-ratio: 1;
+}
+
+.moon__crater--three {
+  top: 64%;
+  left: 36%;
+  width: 9%;
+  aspect-ratio: 1;
+}
+
+.balloon-field,
+.firefly-field,
+.sparkle-field {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.balloon {
+  --rotate: 4deg;
+  --drift: 12px;
+  position: absolute;
+  width: clamp(44px, 6vw, 76px);
+  aspect-ratio: 0.78;
+  border-radius: 50% 50% 47% 47%;
+  animation: balloonFloat var(--duration) ease-in-out infinite;
+  filter: drop-shadow(0 16px 18px rgba(0, 0, 0, 0.22));
+}
+
+.balloon::before {
+  position: absolute;
+  top: 16%;
+  left: 22%;
+  width: 20%;
+  height: 26%;
+  border-radius: 50%;
+  content: "";
+  background: rgba(255, 255, 255, 0.52);
+  transform: rotate(28deg);
+}
+
+.balloon::after {
+  position: absolute;
+  left: 50%;
+  bottom: -62%;
+  width: 1px;
+  height: 68%;
+  content: "";
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.72), transparent);
+}
+
+.balloon--rose {
+  --duration: 6.8s;
+  --rotate: -7deg;
+  --drift: 18px;
+  top: 24%;
+  left: 8%;
+  background: linear-gradient(135deg, #ffd0df, var(--color-rose) 54%, #b93978);
+}
+
+.balloon--gold {
+  --duration: 7.7s;
+  --rotate: 8deg;
+  --drift: -16px;
+  top: 16%;
+  left: 22%;
+  width: clamp(34px, 5vw, 58px);
+  background: linear-gradient(135deg, #fff0b2, var(--color-gold) 56%, #c48328);
+  animation-delay: -2.3s;
+}
+
+.balloon--blue {
+  --duration: 8.4s;
+  --rotate: 6deg;
+  --drift: 14px;
+  right: 12%;
+  bottom: 27%;
+  background: linear-gradient(135deg, #d4fbff, var(--color-blue) 56%, #3678c7);
+  animation-delay: -4.1s;
+}
+
+.balloon--pearl {
+  --duration: 9.2s;
+  --rotate: -5deg;
+  --drift: -20px;
+  left: 14%;
+  bottom: 17%;
+  width: clamp(34px, 5vw, 58px);
+  background: linear-gradient(135deg, #fffaf0, #e9ddff 54%, #a996c9);
+  animation-delay: -3.2s;
+}
+
+.firefly {
+  position: absolute;
+  width: 8px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: #fff6ab;
+  box-shadow:
+    0 0 8px rgba(255, 246, 171, 0.94),
+    0 0 20px rgba(255, 217, 129, 0.62);
+  animation: fireflyDance var(--duration) ease-in-out infinite;
+}
+
+.firefly--one {
+  --travel-x: 92px;
+  --travel-y: -38px;
+  --duration: 6s;
+  top: 35%;
+  left: 28%;
+}
+
+.firefly--two {
+  --travel-x: -80px;
+  --travel-y: 42px;
+  --duration: 7.4s;
+  top: 58%;
+  right: 27%;
+  animation-delay: -1.6s;
+}
+
+.firefly--three {
+  --travel-x: 48px;
+  --travel-y: 72px;
+  --duration: 8.2s;
+  top: 24%;
+  right: 38%;
+  animation-delay: -3s;
+}
+
+.firefly--four {
+  --travel-x: -54px;
+  --travel-y: -70px;
+  --duration: 6.8s;
+  bottom: 26%;
+  left: 35%;
+  animation-delay: -4.2s;
+}
+
+.firefly--five {
+  --travel-x: 70px;
+  --travel-y: 56px;
+  --duration: 8.8s;
+  top: 68%;
+  left: 19%;
+  animation-delay: -2.8s;
+}
+
+.firefly--six {
+  --travel-x: -92px;
+  --travel-y: -24px;
+  --duration: 7.8s;
+  top: 43%;
+  right: 14%;
+  animation-delay: -5s;
+}
+
+.sparkle {
+  position: absolute;
+  width: clamp(12px, 1.8vw, 22px);
+  aspect-ratio: 1;
+  animation: sparklePulse var(--duration) ease-in-out infinite;
+}
+
+.sparkle::before,
+.sparkle::after {
+  position: absolute;
+  inset: 50% auto auto 50%;
+  content: "";
+  background: linear-gradient(to bottom, transparent, #fff7bf, transparent);
+  transform: translate(-50%, -50%);
+}
+
+.sparkle::before {
+  width: 20%;
+  height: 100%;
+}
+
+.sparkle::after {
+  width: 100%;
+  height: 20%;
+}
+
+.sparkle--one {
+  --duration: 3.4s;
+  top: 27%;
+  left: 39%;
+}
+
+.sparkle--two {
+  --duration: 4.2s;
+  top: 62%;
+  right: 20%;
+  animation-delay: -1.6s;
+}
+
+.sparkle--three {
+  --duration: 3.8s;
+  bottom: 24%;
+  left: 24%;
+  animation-delay: -2s;
+}
+
+.sparkle--four {
+  --duration: 4.8s;
+  top: 18%;
+  right: 31%;
+  animation-delay: -2.5s;
+}
+
+.sparkle--five {
+  --duration: 4s;
+  bottom: 30%;
+  right: 41%;
+  animation-delay: -3.3s;
+}
+
+.intro-scene__horizon {
+  position: absolute;
+  inset-inline: 0;
+  bottom: 0;
+  z-index: 1;
+  height: 16vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 14px;
+  opacity: 0.7;
+}
+
+.intro-scene__horizon span {
+  width: min(28vw, 360px);
+  height: 62%;
+  border-radius: 50% 50% 0 0;
+  background: linear-gradient(to top, rgba(12, 13, 36, 0.96), rgba(31, 31, 68, 0.44));
+  animation: horizonGlow 8s ease-in-out infinite;
+}
+
+.intro-scene__horizon span:nth-child(2) {
+  height: 86%;
+  animation-delay: -2s;
+}
+
+.intro-scene__horizon span:nth-child(3) {
+  animation-delay: -4s;
+}
